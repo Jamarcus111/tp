@@ -40,6 +40,5 @@ public interface CryptoCurrency {
      */
     public int returnCurrentPrice();
 
-    public int chanceToBeBanned();
 }
 
