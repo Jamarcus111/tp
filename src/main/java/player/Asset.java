@@ -167,7 +167,7 @@ public class Asset {
         }
     }
 
-    public void sellBond() {
+    public void bondReturn() {
         if (bondList.isEmpty()) {
             ResponseManager.indentPrint("You have no bonds to sell! \n");
             return;
@@ -178,13 +178,10 @@ public class Asset {
             int bondPrice = b.returnBondPrice();
             int totalPrincipal = bondPrice * count;
             double totalInterest = totalPrincipal * b.returnBondInterestRate() / 100.0;
-            int totalReturn = (int) (totalPrincipal + totalInterest);
+            int totalReturn = (int) (totalInterest);
             addAsset(totalReturn);
-            ResponseManager.indentPrint("$" + totalReturn + " returned to your account from "
-                    + b.returnBondName() + ". \n");
+            ResponseManager.indentPrint("$" + totalReturn + " returned to your account from. \n");
         }
-        bondList.clear();
-        bondCount.clear();
     }
 
     public void addCrypto(CryptoCurrency crypto, int dollarsInvested) {
@@ -198,7 +195,7 @@ public class Asset {
         }
     }
 
-    public void sellCrypto() {
+    public void CryptoReturn() {
         if (cryptoList.isEmpty()) {
             ResponseManager.indentPrint("You do not own any cryptocurrency to sell.\n");
             return;
@@ -214,8 +211,6 @@ public class Asset {
                     " returning $" + investmentReturn + " to your account.\n");
         }
         addAsset(totalReturn);
-        cryptoList.clear();
-        cryptoCount.clear();
     }
 
 

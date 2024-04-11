@@ -16,6 +16,8 @@ public class Ethereum implements CryptoCurrency {
                     "increase its adoption and value significantly. \n";
     private int currentPrice;
 
+    private static final int banChance = 10;
+
     public Ethereum() {
         this.currentPrice = 2500;
     }
@@ -62,5 +64,8 @@ public class Ethereum implements CryptoCurrency {
     public int returnCurrentPrice() {
         return currentPrice;
     }
+
+    @Override
+    public int chanceToBeBanned() { return banChance; }
 }
 
