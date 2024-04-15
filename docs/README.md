@@ -9,3 +9,7 @@ Useful links:
 * [User Guide](UserGuide.md)
 * [Developer Guide](DeveloperGuide.md)
 * [About Us](AboutUs.md)
+* [Ma Jiajun](team/jamarcus111.md)
+* [Xia Cong](team/cxia17.md)
+* [Zhu Minghui](team/zminghuiz.md)
+* [Li Kunjun](team/stargazerx0.md)
